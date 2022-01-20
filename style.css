@@ -1,0 +1,105 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+:root {
+  --background-color: #000016;
+  --neon-border: #05e2ff;
+  --font: "Jost", sans-serif;
+  --todo-list-font: "Indie Flower", cursive;
+  --border-input-button: 1.5px solid rgba(5, 226, 255, 0.54);
+}
+
+html {
+  background-color: var(--background-color);
+  font-family: var(--font);
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+h1 {
+  text-align: center;
+  font-size: 55px;
+  color: aliceblue;
+  text-shadow: 0 0 20px #05e2ff, 0 0 75px #05e2ff,
+    -40px -35px 0px rgba(150, 239, 255, 0);
+  text-transform: uppercase;
+  letter-spacing: 0.25rem;
+}
+
+.header-container {
+  padding: 2.5rem;
+  width: 30rem;
+  height: 2.75rem;
+
+  background: rgba(5, 226, 255, 0.17);
+  border-radius: 1rem;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: var(--border-input-button);
+}
+
+.list-container {
+  margin-top: 1.35rem;
+  width: 30rem;
+  height: 100%;
+
+  font-family: var(--todo-list-font);
+  color: aliceblue;
+  letter-spacing: 0.05rem;
+
+  background: rgba(5, 226, 255, 0.17);
+  border-radius: 1rem;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: var(--border-input-button);
+}
+
+.style-button {
+  color: #000016;
+  background-color: aliceblue;
+  border: var(--border-input-button);
+  border-radius: 0.25rem;
+}
+
+.style-todo {
+  list-style: none;
+}
+
+.task-input {
+  border: var(--border-input-button);
+  border-radius: 0.25rem;
+}
+
+.show-button {
+  margin-left: 2.5rem;
+  margin-top: 2rem;
+}
+
+.add-button,
+.delete-button {
+  margin-left: 0.25rem;
+}
+
+.add-button {
+  background-color: var(--neon-border);
+  border: 1.5px solid #05e2ff;
+}
+
+.delete-button:hover {
+  background-color: var(--background-color);
+  border: 1.5px solid var(--background-color);
+  color: aliceblue;
+}
+
+.add-button:hover {
+  background-color: var(--background-color);
+  border: 1.5px solid var(--background-color);
+  color: aliceblue;
+}

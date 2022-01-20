@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Todo-Api</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Indie+Flower&family=Jost:wght@100;200;300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main>
+      <h1>ToDo App</h1>
+
+      <header class="header-container">
+        <input
+          id="create-new-task"
+          class="task-input"
+          type="text"
+          placeholder="your todo … "
+        />
+
+        <button class="style-button add-button" id="add-todo-api">Add</button>
+        <button class="style-button delete-button" id="delete-todo-api">
+          Delete Done
+        </button>
+      </header>
+      <div class="list-container">
+        <button class="style-button show-button" id="show-todo-api">
+          Show
+        </button>
+        <ul id="todo-list" class="style-todo"></ul>
+      </div>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
